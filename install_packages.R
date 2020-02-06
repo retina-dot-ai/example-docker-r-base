@@ -4,7 +4,7 @@ CRANLIKE_REPO <- Sys.getenv('CRANLIKE_REPO')
 # https://mran.microsoft.com/documents/rro/reproducibility
 devtools::install_cran(c(
   'lubridate'
-), repos=CRANLIKE_REPO, dependencies=TRUE, upgrade='always')
+), repos=CRANLIKE_REPO)
 
 # where necessary, install packages from github
 # but use the github commit hash to version-lock them
